@@ -1,0 +1,21 @@
+sudo: false # 是否需要管理员权限，我们不需要
+language: node_js # 语言环境
+node_js:
+  - 10 # 使用 nodejs v10 LTS
+cache: npm
+branches: # github 分支配置
+  only:
+    - source # 只有 source 分支有推送时才触发构建
+script: # 要执行的命令
+  - hexo generate # hexo 生成静态文件
+deploy:
+  provider: pages
+  skip-cleanup: true
+  target_branch: master # 部署的目标分支，默认为 gh_pages 分支
+  github-token: $GH_TOKEN # 在 Travis CI 环境变量中添加的 github 访问令牌名
+  keep-history: true
+  on:
+    branch: source # 源码分支
+  local-dir: public # 要部署内容的目录
+notifications: # 通知
+  email: true # 使用 email 通知自动部署结果

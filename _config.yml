@@ -103,4 +103,4 @@ theme: next
 deploy:
   type: 'git'
   repo: https://github.com/wqf2020/wqf2020.github.io.git,master
-  message: ":performing_arts: 修改hexo主题为 next: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  message: ":circus_tent: 添加 travis ci 自动部署配置: {{ now('YYYY-MM-DD HH:mm:ss') }}"
