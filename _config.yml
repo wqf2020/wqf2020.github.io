@@ -96,11 +96,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: 'git'
   repo: https://github.com/wqf2020/wqf2020.github.io.git,master
-  message: ":triangular_flag_on_post: init hexo blog at: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  message: ":performing_arts: 修改hexo主题为 next: {{ now('YYYY-MM-DD HH:mm:ss') }}"
