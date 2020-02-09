@@ -7,6 +7,7 @@ branches: # github 分支配置
   only:
     - source # 只有 source 分支有推送时才触发构建
 script: # 要执行的命令
+  - git clone https://github.com/theme-next/hexo-theme-next themes/next ## 下载博客主题
   - hexo generate # hexo 生成静态文件
 deploy:
   provider: pages
