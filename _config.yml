@@ -3,12 +3,15 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: WQF2020
+subtitle: '奇变偶不变，符号看象限'
+description: '什么时候开始努力都不嫌晚，那为啥不等明天呢？'
+keywords: 
+  - blog
+  - wqf
+  - wqf2020
+author: wqf2020
+language: zh-CN
 timezone: ''
 
 # URL
@@ -98,4 +101,6 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: 'git'
+  repo: https://github.com/wqf2020/wqf2020.github.io.git,master
+  message: ":triangular_flag_on_post: init hexo blog at: {{ now('YYYY-MM-DD HH:mm:ss') }}"
